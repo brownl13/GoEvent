@@ -17,7 +17,7 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
     var event2 = event()
     var savedEvent: Results<event>!
     
-    var sent = true
+    var finished = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,24 +58,23 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
         
         switch result {
         case .cancelled:
-            sent = false
-        case .saved:
-            sent = false
-        case .sent:
             break
+        case .saved:
+            finished = true
+        case .sent:
+            finished = true
         case .failed:
-            sent = false
+            break
             
         }
         
         controller.dismiss(animated: true, completion: nil)
         
-        if(sent){
-            let alert = UIAlertController(title: "Success!", message: "Email has been sent!", preferredStyle: UIAlertControllerStyle.alert)
+        if(finished){
+            let mySC = self.storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") as! CreateEventViewController
+            self.navigationController?.popViewController(animated: false)
             
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            
-            self.present(alert, animated: true, completion: nil)
+            self.navigationController?.pushViewController(mySC, animated: true)
         }
     }
     

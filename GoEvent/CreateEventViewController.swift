@@ -19,7 +19,8 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     
     var selection = ""
     var event1 = event()
-    
+    var event2 = event()
+    var savedEvent: Results<event>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +28,28 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         self.guests.delegate = self
         self.budget.delegate = self
         
-        let realm = try! Realm()
+       /* let realm = try! Realm()
         try! realm.write {
             realm.delete(realm.objects(event.self))
-        }
+        } */
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.eventName.delegate = self
+        self.guests.delegate = self
+        self.budget.delegate = self
         
+       /* let realm = try! Realm()
+        try! realm.write {
+            realm.delete(realm.objects(event.self))
+        } */
+        
+        wedding.backgroundColor = UIColor.white
+        generalParty.backgroundColor = UIColor.white
+        eventName.text = ""
+        guests.text = ""
+        budget.text = ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -103,22 +120,38 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         }
         
         else {
-            
-            event1.budget = budget.text!
-            event1.eventName = eventName.text!
-            event1.eventType = selection
-            event1.numGuests = guests.text!
-            
+           
             do {
                 let realm = try Realm()
-                try realm.write() {
-                    realm.add(event1)
+                savedEvent = realm.objects(event.self)
+                
+                if let event1 = savedEvent.first{
+                    try realm.write(){
+                        event1.budget = budget.text!
+                        event1.eventName = eventName.text!
+                        event1.eventType = selection
+                        event1.numGuests = guests.text!
+                    }
+                }
+                
+                else {
+                    event2.budget = budget.text!
+                    event2.eventName = eventName.text!
+                    event2.eventType = selection
+                    event2.numGuests = guests.text!
+                    
+                    try realm.write(){
+                        realm.add(event2)
+                    }
                 }
                 
             }
+            
             catch {
                 print(error.localizedDescription)
             }
+            
+            
         
             if (selection == "wedding")
             {

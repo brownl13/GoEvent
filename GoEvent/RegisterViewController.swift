@@ -17,6 +17,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
    
     var user1 = user()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,12 +25,43 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         self.email.delegate = self
         self.password.delegate = self
         
-        let realm = try! Realm()
-        try! realm.write {
+        /*let realm = try! Realm()
+       try! realm.write {
             realm.deleteAll()
-        }
+        } */
+        
         
     }
+    
+    // Start Editing The Text Field
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if (textField == password){
+        moveTextField(textField, moveDistance: -80, up: true)
+        }
+    }
+    
+    // Finish Editing The Text Field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if (textField == password){
+        moveTextField(textField, moveDistance: -80, up: false)
+        }
+    }
+    
+  
+    
+    // Move the text field in a pretty animation!
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+    
+  
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -38,6 +70,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     @IBAction func buttonClicked(_ sender: Any) {
