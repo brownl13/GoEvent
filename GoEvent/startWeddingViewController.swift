@@ -12,6 +12,17 @@ import MessageUI
 
 class startWeddingViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
+    @IBOutlet weak var pCost: UITextField!
+    @IBOutlet weak var pName: UITextField!
+    @IBOutlet weak var bCost: UITextField!
+    @IBOutlet weak var bName: UITextField!
+    @IBOutlet weak var fCost: UITextField!
+    @IBOutlet weak var fName: UITextField!
+    @IBOutlet weak var dCost: UITextField!
+    @IBOutlet weak var dName: UITextField!
+    @IBOutlet weak var vName: UITextField!
+    @IBOutlet weak var vCost: UITextField!
+    @IBOutlet weak var budget: UITextField!
     var user2 = user()
     var savedUser: Results<user>!
     var event2 = event()
@@ -33,6 +44,8 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
         }
         user2 = savedUser[0]
         event2 = savedEvent[0]
+        
+        budget.text = "$" + event2.budget + ".00"
     }
     
     

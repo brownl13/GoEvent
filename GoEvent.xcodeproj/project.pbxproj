@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		039D1B753BC5B8B70A61F692 /* Pods_GoEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679DAC1567B09D9DB4E9708 /* Pods_GoEvent.framework */; };
+		2D7000772087EAAA00A382C1 /* weddingPlanned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7000762087EAAA00A382C1 /* weddingPlanned.swift */; };
 		2D76331420755074003C8C1D /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76331320755074003C8C1D /* user.swift */; };
 		2D763318207567D2003C8C1D /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D763317207567D2003C8C1D /* event.swift */; };
 		2DACE0F6206C04DE003354AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE0F5206C04DE003354AF /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D7000762087EAAA00A382C1 /* weddingPlanned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weddingPlanned.swift; sourceTree = "<group>"; };
 		2D76331320755074003C8C1D /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		2D763317207567D2003C8C1D /* event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = SOURCE_ROOT; };
 		2DACE0F2206C04DE003354AF /* GoEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				2D763317207567D2003C8C1D /* event.swift */,
 				2DACE0F5206C04DE003354AF /* AppDelegate.swift */,
 				2DACE0F9206C04DE003354AF /* Main.storyboard */,
+				2D7000762087EAAA00A382C1 /* weddingPlanned.swift */,
 				2DE23D46206C372A00101E1B /* startWeddingViewController.swift */,
 				2DE23D48206C376800101E1B /* startGeneralPartyViewController.swift */,
 				2DACE109206C0B9B003354AF /* RegisterViewController.swift */,
@@ -245,6 +248,7 @@
 				2DE23D49206C376800101E1B /* startGeneralPartyViewController.swift in Sources */,
 				2DE23D47206C372A00101E1B /* startWeddingViewController.swift in Sources */,
 				2D76331420755074003C8C1D /* user.swift in Sources */,
+				2D7000772087EAAA00A382C1 /* weddingPlanned.swift in Sources */,
 				2D763318207567D2003C8C1D /* event.swift in Sources */,
 				2DACE0F6206C04DE003354AF /* AppDelegate.swift in Sources */,
 				2DACE10A206C0B9B003354AF /* RegisterViewController.swift in Sources */,

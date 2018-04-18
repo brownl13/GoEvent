@@ -28,6 +28,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         self.guests.delegate = self
         self.budget.delegate = self
         
+        
        /* let realm = try! Realm()
         try! realm.write {
             realm.delete(realm.objects(event.self))
@@ -50,6 +51,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         eventName.text = ""
         guests.text = ""
         budget.text = ""
+        selection = ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -78,7 +80,6 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func goClicked(_ sender: Any) {
-        
         if selection == "" {
             
              let alert = UIAlertController(title: "Sorry!", message: "Please select an event type!", preferredStyle: UIAlertControllerStyle.alert)
@@ -155,7 +156,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         
             if (selection == "wedding")
             {
-                let myWC = self.storyboard?.instantiateViewController(withIdentifier: "startWeddingViewController") as! startWeddingViewController
+                let myWC = self.storyboard?.instantiateViewController(withIdentifier: "weddingPlanned") as! weddingPlanned
                 
                 self.navigationController?.pushViewController(myWC, animated: true)
             }
