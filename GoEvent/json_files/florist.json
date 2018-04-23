@@ -1,0 +1,257 @@
+{
+    "florists": [
+    {
+        "name": "The Flowerman",
+        "website": "http://flowermanflowers.com/",
+        "location": {
+            "address": "70A Westpark Rd",
+            "city": "Dayton",
+            "state": "OH",
+            "zipcode": "45459"
+        },
+        "contact": {
+            "phone": "937-433-8610",
+            "email": "daytonweddings@flowermanflowers.com"
+        },
+        "rating": 4.3,
+        "reviews": 69,
+        "about": "The Flowerman serves couples in and around southern and central Ohio. To make sure you get exactly what you want, we offer several unique wedding flower options. Choose from: do-it-yourself, full-service design, bulk boxlots-to-go, or a combination of the three to fit your budget.",
+        "services": [
+            {
+                "category": "weddings",
+                "prices": [
+                    {
+                        "option": "DIY",
+                        "price": 800.00
+                    },
+                    {
+                        "option": "Full-Service Design",
+                        "price": 1500.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/weddings.html"
+            },
+            {
+                "category": "classes",
+                "prices": [
+                    {
+                        "option": "Beginner",
+                        "price": 40.00
+                    },
+                    {
+                        "option": "Advanced",
+                        "price": 80.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/classes.html"
+            }
+        ]
+    },
+
+    {
+        "name": "Ford-ellington",
+        "website": "https://www.ford-ellington.com/#!/HOME",
+        "location": {
+            "address": "16 N. Fort Thomas Ave.",
+            "city": "Fort Thomas",
+            "state": "KY",
+            "zipcode": "41075"
+        },
+        "contact": {
+            "phone": "859-781-0700",
+            "email": "kevin@ford-ellington.com"
+        },
+        "rating": 5.0,
+        "reviews": 58,
+        "about": "The foundation of Ford-Ellington's reputation is our commitment to our couples thorough our outstanding service and attention to detail. Our exquisite florals are unsurpassed in freshness, quality and design, and will be as unforgettable as your wedding itself. This commitment is exemplified by being recommended by the finest wedding professionals and overjoyed clients.",
+        "services": [
+            {
+                "category": "weddings",
+                "prices": [
+                    {
+                        "option": "Ceremonies",
+                        "price": 800.00
+                    },
+                    {
+                        "option": "Bouquets",
+                        "price": 525.00
+                    },
+                    {
+                        "option": "Receptions",
+                        "price": 400.00
+                    },
+                    {
+                        "option": "Tented Weddings",
+                        "price": 1500.00
+                    }
+                ],
+                "details": "https://www.ford-ellington.com/#!/detail_galleries"
+            },
+            {
+                "category": "classes",
+                "prices": [
+                    {
+                        "option": "Beginner",
+                        "price": 40.00
+                    },
+                    {
+                        "option": "Advanced",
+                        "price": 80.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/classes.html"
+            }
+        ]
+    },
+
+    {
+        "name": "Courtenay Lambert",
+        "website": "http://www.courtenaylambert.com/",
+        "location": {
+            "address": "4212 Airport Rd. Suite 108",
+            "city": "Cincinnati",
+            "state": "OH",
+            "zipcode": "45226"
+        },
+        "contact": {
+            "phone": "513-321-0100",
+            "email": "lambert@courtenaylambert.com"
+        },
+        "rating": 4.8,
+        "reviews": 72,
+        "about": "We specialize in creating stunning  floral designs, custom installations, and spectacularly detailed special events for local as well as destination events.  Each event is curated and customized to make our client's vision, inspiration and dreams a reality. We love bringing your ideas to life, and creating events that exceed expectations!",
+        "services": [
+            {
+                "category": "weddings",
+                "prices": [
+                    {
+                        "option": "Custom",
+                        "price": 600.00
+                    }
+                ],
+                "details": "http://www.courtenaylambert.com/floral/"
+            },
+            {
+                "category": "classes",
+                "prices": [
+                    {
+                        "option": "Beginner",
+                        "price": 40.00
+                    },
+                    {
+                        "option": "Advanced",
+                        "price": 80.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/classes.html"
+            }
+        ]
+    },
+
+    {
+        "name": "Robin Wood Flowers",
+        "website": "http://robinwoodflowers.com/wordpress/",
+        "location": {
+            "address": "1902 Dana Ave",
+            "city": "Cincinnati",
+            "state": "OH",
+            "zipcode": "45207"
+        },
+        "contact": {
+            "phone": "513-531-5590",
+            "email": "robin@robinwoodflowers.com"
+        },
+        "rating": 4.6,
+        "reviews": 89,
+        "about": "We are artisan floral designers, taking our inspiration from the seasons. Our galleries are meant to inspire and share our love of flowers. At Robin Wood Flowers, our bouquets are created using the freshest most beautiful seasonal blooms we can find each day.",
+        "services": [
+            {
+                "category": "weddings",
+                "prices": [
+                    {
+                        "option": "Black Tie Affair",
+                        "price": 695.00
+                    }, {
+                        "option": "Classic Chic",
+                        "price": 520.00
+                    }, {
+                        "option": "Woodland Grace",
+                        "price": 534.00
+                    }, {
+                        "option": "Grand Elegance",
+                        "price": 650.00
+                    }, {
+                        "option": "Spring Soiree",
+                        "price": 620.00
+                    }, {
+                        "option": "Natural Beauty",
+                        "price": 550.00
+                    }
+                ],
+                "details": "http://robinwoodflowers.com/wordpress/home/robin-wood-weddings/"
+            },
+            {
+                "category": "classes",
+                "prices": [
+                    {
+                        "option": "Beginner",
+                        "price": 40.00
+                    },
+                    {
+                        "option": "Advanced",
+                        "price": 80.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/classes.html"
+            }
+        ]
+    },
+
+    {
+        "name": "Floral V Designs",
+        "website": "https://www.floralvdesigns.com/elevate-your-gifting/",
+        "location": {
+            "address": "24 South Main Street",
+            "city": "Bellbrook",
+            "state": "OH",
+            "zipcode": "45305"
+        },
+        "contact": {
+            "phone": "937-709-9117",
+            "email": "floral@floralvdesigns.com"
+        },
+        "rating": 4.2,
+        "reviews": 58,
+        "about": "Floral V Designs has quickly become a rising star in the luxury floral industry, without the luxury price tag. We specialize in weddings, galas, special events, and corporate flowers.",
+        "services": [
+            {
+                "category": "weddings",
+                "prices": [
+                    {
+                        "option": "Deluxe Custom",
+                        "price": 1000.00
+                    }, {
+                        "option": "Intimate Custom",
+                        "price": 895.00
+                    }
+                ],
+                "details": "http://www.floralvdesigns.com/wedding-flower-services/"
+            },
+            {
+                "category": "classes",
+                "prices": [
+                    {
+                        "option": "Beginner",
+                        "price": 40.00
+                    },
+                    {
+                        "option": "Advanced",
+                        "price": 80.00
+                    }
+                ],
+                "details": "http://www.flowermanflowers.com/classes.html"
+            }
+        ]
+    }
+]
+}

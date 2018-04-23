@@ -18,9 +18,14 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var budget: UITextField!
     
     var selection = ""
+    var curEvent = currentEvent()
+    var curEvent2 = currentEvent()
     var event1 = event()
     var event2 = event()
     var savedEvent: Results<event>!
+    var savedUser: Results<user>!
+    var user1 = user()
+    var curEvents: Results<currentEvent>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +33,12 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         self.guests.delegate = self
         self.budget.delegate = self
         
-        
        /* let realm = try! Realm()
         try! realm.write {
             realm.delete(realm.objects(event.self))
         } */
+        
+        self.navigationItem.setHidesBackButton(true, animated:true);
         
     }
     
@@ -51,7 +57,8 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         eventName.text = ""
         guests.text = ""
         budget.text = ""
-        selection = ""
+        
+        self.navigationItem.setHidesBackButton(true, animated:true);
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -80,6 +87,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func goClicked(_ sender: Any) {
+        
         if selection == "" {
             
              let alert = UIAlertController(title: "Sorry!", message: "Please select an event type!", preferredStyle: UIAlertControllerStyle.alert)
@@ -121,56 +129,72 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         }
         
         else {
-           
-            do {
+         
+            
+            
+            
+         
+            do{
+            
                 let realm = try Realm()
-                savedEvent = realm.objects(event.self)
+                curEvents = realm.objects(currentEvent.self)
+                savedUser = realm.objects(user.self)
+                user1 = savedUser[0]
                 
-                if let event1 = savedEvent.first{
-                    try realm.write(){
-                        event1.budget = budget.text!
-                        event1.eventName = eventName.text!
-                        event1.eventType = selection
-                        event1.numGuests = guests.text!
-                    }
-                }
                 
-                else {
+            if let curEvent = curEvents.first{
+                try realm.write(){
+                    curEvent.budget = budget.text!
+                    curEvent.eventName = eventName.text!
+                    curEvent.eventType = selection
+                    curEvent.numGuests = guests.text!
+                    curEvent.email = user1.email
+                    curEvent.username = user1.name
                     event2.budget = budget.text!
                     event2.eventName = eventName.text!
                     event2.eventType = selection
                     event2.numGuests = guests.text!
-                    
-                    try realm.write(){
-                        realm.add(event2)
-                    }
+                    event2.email = user1.email
+                    event2.username = user1.name
+                    realm.add(event2)
                 }
+            }
                 
+            else {
+               
+                try realm.write(){
+                    curEvent2.budget = budget.text!
+                    curEvent2.eventName = eventName.text!
+                    curEvent2.eventType = selection
+                    curEvent2.numGuests = guests.text!
+                    curEvent2.email = user1.email
+                    curEvent2.username = user1.name
+                    event2.budget = budget.text!
+                    event2.eventName = eventName.text!
+                    event2.eventType = selection
+                    event2.numGuests = guests.text!
+                    event2.email = user1.email
+                    event2.username = user1.name
+                    realm.add(event2)
+                    realm.add(curEvent2)
+                }
+            }
             }
             
             catch {
                 print(error.localizedDescription)
             }
+
             
+            
+           
+        }
             
         
-            if (selection == "wedding")
-            {
-                let myWC = self.storyboard?.instantiateViewController(withIdentifier: "weddingPlanned") as! weddingPlanned
-                
-                self.navigationController?.pushViewController(myWC, animated: true)
-            }
-            
-            else if (selection == "general party")
-            {
-                let myGC = self.storyboard?.instantiateViewController(withIdentifier: "startGeneralPartyViewController") as! startGeneralPartyViewController
-               
-                self.navigationController?.pushViewController(myGC, animated: true)
-            }
         }
         
     }
     
     
     
-}
+

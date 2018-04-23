@@ -1,0 +1,308 @@
+{
+"beauty": [
+{
+	"name": "Brideface",
+	"website": "https://www.brideface.com/weddings",
+	"location": {
+		"address": "2009 Elm St.",
+		"city": "Cincinnati",
+		"state": "OH",
+		"zipcode": "45202"
+	},
+	"contact": {
+		"phone": "513-305-9723"
+	},
+	"rating": 5.0,
+	"reviews": 11,
+	"about": "The most highly sought after beauty team in Cincinnati! We specialize in airbrush foundation and individual lash enhancements for flawless, long-wearing, stunning makeup that looks just as gorgeous in real life as on camera. Enhance your photography investment with pro makeup!",
+	"services": [
+		{
+			"category": "wedding makeup",
+			"prices": [
+				{
+					"option": "hair styling",
+					"price": 100.00
+				},
+				{
+					"option": "makeup",
+					"price": 125.00
+				},
+				{
+					"option": "hair and makeup",
+					"price": 160.00
+				}
+			],
+			"details": "https://www.brideface.com/weddings"
+		},
+		{
+			"category": "portrait makeup",
+			"prices": [
+				{
+					"option": "hair styling",
+					"price": 40.00
+				},
+				{
+					"option": "makeup",
+					"price": 50.00
+				},
+				{
+					"option": "hair and makeup",
+					"price": 65.00  
+				}
+			],
+			"details": "https://www.brideface.com/portraits"
+		}
+	]
+},
+{
+    "name": "Rollers and Rouge",
+	"website": "https://rollersandrouge.com/onsite-hair-makeup/",
+	"location": {
+		"address": "5568 Beechmont Ave #2",
+		"city": "Cincinnati",
+		"state": "OH",
+		"zipcode": "45202"
+	},
+	"contact": {
+		"phone": "303-522-8603"
+	},
+	"rating": 4.6,
+	"reviews": 9,
+	"about": "Here we are in 2018 with 14 amazingly talented stylists in Cincinnati and Denver, still with the same                 mission that every bride should afford to feel beautiful!  Having only raised our prices 3 times in the               last 5 years, we are proud to say we offer the highest quality service and unparalleled work at prices                well below our competitors! We love our brides and every single wedding is such an honor to be a part of.             We would love to hear from you!",
+	"services": [
+		{
+			"category": "hair serivces",
+			"prices": [
+				{
+					"option": "Formal Finish Up-Style",
+					"price": 65.00
+				},
+				{
+					"option": "Formal Finish Half-Up",
+					"price": 65.00
+				},
+				{
+					"option": "Blow Out/Style",
+					"price": 45.00
+				}
+			],
+			"details": "https://rollersandrouge.com/services-menu-pricing/"
+		},
+		{
+			"category": "makeup serivces",
+			"prices": [
+				{
+					"option": "Standard",
+					"price": 65.00
+				},
+				{
+					"option": "Airbrush",
+					"price": 80.00
+				},
+				{
+					"option": "False Eyelashes",
+					"price": 10.00
+				}
+			],
+			"details": "https://rollersandrouge.com/services-menu-pricing/"
+		}
+	]
+},
+
+{
+    "name": "Chenese Bean Makeup Artistry",
+    "website": "https://chenesebean.com/weddings/",
+	"location": {
+		"address": "320 W Benson St",
+		"city": "Cincinnati",
+		"state": "OH",
+		"zipcode": "45215"
+	},
+	"contact": {
+		"phone": "513-348-9004"
+	},
+	"rating": 5.0,
+	"reviews": 18,
+	"about": "With over 20 years experience, Chenese is highly sought after with stellar creativity and clientele                   (past & present) who provides quality services in the categories shown below.  Select your area of                    interest to view photos of her work.",
+	"services": [
+		{
+			"category": "hair serivces",
+			"prices": [
+				{
+					"option": "On-location wedding day hair styling",
+					"price": 70.00
+				}
+			],
+			"details": ""
+		},
+		{
+			"category": "makeup serivces",
+			"prices": [
+				{
+					"option": "Bride:  Wedding Day (On-Location)",
+					"price": 135.00
+				},
+				{
+					"option": "Bridesmaids, Maid of Honor, Matron of Honor",
+					"price": 75.00
+				},
+				{
+					"option": "Mother(s)",
+					"price": 55.00
+				}
+			],
+			"details": "https://chenesebean.com/weddings/"
+		}
+	]
+},
+
+{
+    "name": "Toolbox Studio Salon",
+    "website": "https://toolboxstudiosalon.com/",
+	"location": {
+		"address": "2037 Madison Rd",
+		"city": "Cincinnati",
+		"state": "OH",
+		"zipcode": "45208"
+	},
+	"contact": {
+		"phone": "513-979-3203"
+	},
+	"rating": 5.0,
+	"reviews": 29,
+	"about": "Toolbox Studio Salon has the “extra tools “you need to be your best self!  Each and every person who walks through our door is unique and special to us. Our team constantly provides our customers with top notch service, high end products and consistent work ethic so that we keep them coming back for years to come.",
+	"services": [
+		{
+			"category": "hair serivces",
+			"prices": [
+				{
+					"option": "Wedding day hair styling",
+					"price": 75.00
+				}
+			],
+			"details": "https://toolboxstudiosalon.com/hair-styling-services-at-toolbox-studio-salon/"
+		},
+		{
+			"category": "makeup serivces",
+			"prices": [
+				{
+					"option": "Wedding Day Bridal makeup",
+					"price": 145.00
+				}
+			],
+			"details": "https://toolboxstudiosalon.com/bridal-makeup/"
+		}
+	]
+},
+
+{
+	"name": "Cinci Makeup",
+	"website": "https://www.cincimakeup.com/weddings",
+	"location": {
+		"address": "915 Monmouth St",
+		"city": "Newport",
+		"state": "KY",
+		"zipcode": "41071"
+	},
+	"contact": {
+		"phone": "513-886-0104"
+	},
+	"rating": 5.0,
+	"reviews": 9,
+	"about": "Cinci Makeup is an experienced team of makeup artists that specialize in high definition makeup that will have the longevity to last until your final dance. Let us wave our magical makeup wands to make your bridal dreams come true and grant you the most beautiful version of yourself!",
+	"services": [
+		{
+			"category": "wedding makeup",
+			"prices": [
+				{
+					"option": "hair styling",
+					"price": 160.00
+				},
+				{
+					"option": "makeup",
+					"price": 185.00
+				},
+				{
+					"option": "hair and makeup",
+					"price": 190.00
+				}
+			],
+			"details": "https://www.cincimakeup.com/weddings"
+		},
+		{
+			"category": "portrait makeup",
+			"prices": [
+				{
+					"option": "hair styling",
+					"price": 50.00
+				},
+				{
+					"option": "makeup",
+					"price": 80.00
+				},
+				{
+					"option": "hair and makeup",
+					"price": 95.00  
+				}
+			],
+			"details": "https://www.cincimakeup.com/weddings"
+		}
+	]
+},
+
+{
+	"name": "CoCo Creative Wellness",
+	"website": "http://www.cococreativewellness.com/services/bridal-services/",
+	"location": {
+		"address": "4021 Eastern Ave #7",
+		"city": "Cincinnati",
+		"state": "OH",
+		"zipcode": "45226"
+	},
+	"contact": {
+		"phone": "513-713-1448"
+	},
+	"rating": 4.7,
+	"reviews": 23,
+	"about": "The beauty team at CoCo is passionate about helping to make our Bridal Clients’ special day one to remember.  We are happy to offer a complimentary consultation on how we can help realize your beauty dreams https://ed..generika/! As an addition to our hair and makeup services, we are here to accommodate bridal parties for nail, skin, and waxing appointments the day of, or the week leading up to your day. Allow us to exceed your wildest wedding dreams!",
+	"services": [
+		{
+			"category": "wedding makeup",
+			"prices": [
+				{
+					"option": "Bridal Make-up Trial",
+					"price": 40.00
+				},
+				{
+					"option": "Bridal Party Upstyle",
+					"price": 80.00
+				},
+				{
+					"option": "Bridal Party Make-up",
+					"price": 90.00
+				}
+			],
+			"details": "http://www.cococreativewellness.com/services/pricing-table/"
+		},
+		{
+			"category": "hair styling",
+			"prices": [
+				{
+					"option": "Wedding Day Bridal Hair Style",
+					"price": 125.00
+				},
+				{
+					"option": "Bridal Hair Style Trial",
+					"price": 50.00
+				},
+				{
+					"option": "Flower Girl Hair Style",
+					"price": 40.00  
+				}
+			],
+			"details": "http://www.cococreativewellness.com/services/pricing-table/"
+        }
+    ]
+}
+]
+}

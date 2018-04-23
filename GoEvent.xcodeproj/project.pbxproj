@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		039D1B753BC5B8B70A61F692 /* Pods_GoEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679DAC1567B09D9DB4E9708 /* Pods_GoEvent.framework */; };
-		2D7000772087EAAA00A382C1 /* weddingPlanned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7000762087EAAA00A382C1 /* weddingPlanned.swift */; };
+		2D623D65208E337E00B1F7D5 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D623D64208E337E00B1F7D5 /* arrow.png */; };
+		2D623D69208E378400B1F7D5 /* weddingPlanned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D623D68208E378400B1F7D5 /* weddingPlanned.swift */; };
+		2D623D6D208E37D800B1F7D5 /* savedEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D623D6C208E37D800B1F7D5 /* savedEvents.swift */; };
+		2D623D71208E3D5700B1F7D5 /* currentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D623D70208E3D5700B1F7D5 /* currentEvent.swift */; };
+		2D623D7B208E691300B1F7D5 /* loadingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D623D7A208E691300B1F7D5 /* loadingTabBarController.swift */; };
 		2D76331420755074003C8C1D /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76331320755074003C8C1D /* user.swift */; };
 		2D763318207567D2003C8C1D /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D763317207567D2003C8C1D /* event.swift */; };
 		2DACE0F6206C04DE003354AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE0F5206C04DE003354AF /* AppDelegate.swift */; };
@@ -18,13 +22,22 @@
 		2DACE10A206C0B9B003354AF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE109206C0B9B003354AF /* RegisterViewController.swift */; };
 		2DACE10C206C0CE8003354AF /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DACE10B206C0CE7003354AF /* Logo.jpg */; };
 		2DACE10E206C0E66003354AF /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DACE10D206C0E66003354AF /* CreateEventViewController.swift */; };
-		2DE23D45206C1BFC00101E1B /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE23D44206C1BFB00101E1B /* arrow.png */; };
 		2DE23D47206C372A00101E1B /* startWeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE23D46206C372A00101E1B /* startWeddingViewController.swift */; };
 		2DE23D49206C376800101E1B /* startGeneralPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE23D48206C376800101E1B /* startGeneralPartyViewController.swift */; };
+		9200CDF52087DEFC0003D0CE /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9200CDF42087DEFC0003D0CE /* arrow.jpeg */; };
+		9200CDF8208D33650003D0CE /* BaseAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200CDF7208D33650003D0CE /* BaseAnnotation.swift */; };
+		9200CE05208D354A0003D0CE /* SearchVendorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200CE04208D354A0003D0CE /* SearchVendorsViewController.swift */; };
+		9200CE07208D37A20003D0CE /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200CE06208D37A20003D0CE /* ShowDetailsViewController.swift */; };
+		922CA1EB208D697B00BAEBFA /* json_files in Resources */ = {isa = PBXBuildFile; fileRef = 922CA1EA208D697B00BAEBFA /* json_files */; };
+		922CA1ED208D967600BAEBFA /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922CA1EC208D967600BAEBFA /* Vendor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D7000762087EAAA00A382C1 /* weddingPlanned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weddingPlanned.swift; sourceTree = "<group>"; };
+		2D623D64208E337E00B1F7D5 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../arrow.png; sourceTree = "<group>"; };
+		2D623D68208E378400B1F7D5 /* weddingPlanned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weddingPlanned.swift; sourceTree = "<group>"; };
+		2D623D6C208E37D800B1F7D5 /* savedEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedEvents.swift; sourceTree = "<group>"; };
+		2D623D70208E3D5700B1F7D5 /* currentEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentEvent.swift; sourceTree = "<group>"; };
+		2D623D7A208E691300B1F7D5 /* loadingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingTabBarController.swift; sourceTree = "<group>"; };
 		2D76331320755074003C8C1D /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		2D763317207567D2003C8C1D /* event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = SOURCE_ROOT; };
 		2DACE0F2206C04DE003354AF /* GoEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +49,15 @@
 		2DACE109206C0B9B003354AF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2DACE10B206C0CE7003354AF /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Logo.jpg; path = Assets.xcassets/Logo.jpg; sourceTree = "<group>"; };
 		2DACE10D206C0E66003354AF /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
-		2DE23D44206C1BFB00101E1B /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../../Downloads/arrow.png; sourceTree = "<group>"; };
 		2DE23D46206C372A00101E1B /* startWeddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startWeddingViewController.swift; sourceTree = "<group>"; };
 		2DE23D48206C376800101E1B /* startGeneralPartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startGeneralPartyViewController.swift; sourceTree = "<group>"; };
 		8679DAC1567B09D9DB4E9708 /* Pods_GoEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9200CDF42087DEFC0003D0CE /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
+		9200CDF7208D33650003D0CE /* BaseAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnnotation.swift; sourceTree = "<group>"; };
+		9200CE04208D354A0003D0CE /* SearchVendorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVendorsViewController.swift; sourceTree = "<group>"; };
+		9200CE06208D37A20003D0CE /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		922CA1EA208D697B00BAEBFA /* json_files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = json_files; sourceTree = "<group>"; };
+		922CA1EC208D967600BAEBFA /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
 		9CED0288315585B28D2450CE /* Pods-GoEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEvent/Pods-GoEvent.release.xcconfig"; sourceTree = "<group>"; };
 		A5DBEE9D185B4B34A3E3C4A2 /* Pods-GoEvent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEvent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEvent/Pods-GoEvent.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,22 +103,39 @@
 		2DACE0F4206C04DE003354AF /* GoEvent */ = {
 			isa = PBXGroup;
 			children = (
+				922CA1EA208D697B00BAEBFA /* json_files */,
+				9200CDF6208D33330003D0CE /* Annotation */,
 				2D763317207567D2003C8C1D /* event.swift */,
+				2D623D70208E3D5700B1F7D5 /* currentEvent.swift */,
+				2D623D6C208E37D800B1F7D5 /* savedEvents.swift */,
+				922CA1EC208D967600BAEBFA /* Vendor.swift */,
 				2DACE0F5206C04DE003354AF /* AppDelegate.swift */,
-				2DACE0F9206C04DE003354AF /* Main.storyboard */,
-				2D7000762087EAAA00A382C1 /* weddingPlanned.swift */,
 				2DE23D46206C372A00101E1B /* startWeddingViewController.swift */,
 				2DE23D48206C376800101E1B /* startGeneralPartyViewController.swift */,
 				2DACE109206C0B9B003354AF /* RegisterViewController.swift */,
 				2D76331320755074003C8C1D /* user.swift */,
 				2DACE10D206C0E66003354AF /* CreateEventViewController.swift */,
-				2DACE0FC206C04DE003354AF /* Assets.xcassets */,
-				2DE23D44206C1BFB00101E1B /* arrow.png */,
-				2DACE10B206C0CE7003354AF /* Logo.jpg */,
+				9200CE04208D354A0003D0CE /* SearchVendorsViewController.swift */,
+				9200CE06208D37A20003D0CE /* ShowDetailsViewController.swift */,
+				2D623D68208E378400B1F7D5 /* weddingPlanned.swift */,
+				2DACE0F9206C04DE003354AF /* Main.storyboard */,
 				2DACE0FE206C04DE003354AF /* LaunchScreen.storyboard */,
+				2DACE0FC206C04DE003354AF /* Assets.xcassets */,
+				9200CDF42087DEFC0003D0CE /* arrow.jpeg */,
+				2D623D64208E337E00B1F7D5 /* arrow.png */,
+				2DACE10B206C0CE7003354AF /* Logo.jpg */,
 				2DACE101206C04DE003354AF /* Info.plist */,
+				2D623D7A208E691300B1F7D5 /* loadingTabBarController.swift */,
 			);
 			path = GoEvent;
+			sourceTree = "<group>";
+		};
+		9200CDF6208D33330003D0CE /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				9200CDF7208D33650003D0CE /* BaseAnnotation.swift */,
+			);
+			path = Annotation;
 			sourceTree = "<group>";
 		};
 		96E755E82EC91AE1F8FFBC30 /* Pods */ = {
@@ -174,10 +209,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922CA1EB208D697B00BAEBFA /* json_files in Resources */,
 				2DACE10C206C0CE8003354AF /* Logo.jpg in Resources */,
+				9200CDF52087DEFC0003D0CE /* arrow.jpeg in Resources */,
 				2DACE100206C04DE003354AF /* LaunchScreen.storyboard in Resources */,
 				2DACE0FD206C04DE003354AF /* Assets.xcassets in Resources */,
-				2DE23D45206C1BFC00101E1B /* arrow.png in Resources */,
+				2D623D65208E337E00B1F7D5 /* arrow.png in Resources */,
 				2DACE0FB206C04DE003354AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,13 +282,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D623D6D208E37D800B1F7D5 /* savedEvents.swift in Sources */,
+				2D623D69208E378400B1F7D5 /* weddingPlanned.swift in Sources */,
+				9200CE05208D354A0003D0CE /* SearchVendorsViewController.swift in Sources */,
 				2DE23D49206C376800101E1B /* startGeneralPartyViewController.swift in Sources */,
+				2D623D71208E3D5700B1F7D5 /* currentEvent.swift in Sources */,
 				2DE23D47206C372A00101E1B /* startWeddingViewController.swift in Sources */,
 				2D76331420755074003C8C1D /* user.swift in Sources */,
-				2D7000772087EAAA00A382C1 /* weddingPlanned.swift in Sources */,
 				2D763318207567D2003C8C1D /* event.swift in Sources */,
 				2DACE0F6206C04DE003354AF /* AppDelegate.swift in Sources */,
+				9200CE07208D37A20003D0CE /* ShowDetailsViewController.swift in Sources */,
+				922CA1ED208D967600BAEBFA /* Vendor.swift in Sources */,
+				9200CDF8208D33650003D0CE /* BaseAnnotation.swift in Sources */,
 				2DACE10A206C0B9B003354AF /* RegisterViewController.swift in Sources */,
+				2D623D7B208E691300B1F7D5 /* loadingTabBarController.swift in Sources */,
 				2DACE10E206C0E66003354AF /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

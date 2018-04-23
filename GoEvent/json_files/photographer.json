@@ -1,0 +1,323 @@
+{
+
+    "photographers": [
+    {
+        "name": "Images By Daniel Michael",
+        "website": "https://www.danielmichael.com/",
+        "location": {
+            "address": "110 W. Benson St.",
+            "city": "Cincinnati",
+            "state": "OH",
+            "zipcode": "45215"
+        },
+        "contact": {
+            "phone": "513-759-6760",
+            "email": "photo@danielmichael.com"
+        },
+        "rating": 5.0,
+        "reviews": 21,
+        "about": "Showcasing you, your style and your memories with a variety of techniques for breathtaking images. Above all, your wedding experience is our #1 priority over even photography.",
+        "price-range": "$$",
+        "photo style": ["artistic", "classic", "documentary", "dramatic", "lifestyle", "modern", "vintage"],
+        "services": [
+            {
+                "category": "wedding package",
+                "prices": [
+                    {
+                        "option": "small wedding package",
+                        "price": 2000.00
+                    },
+                    {
+                        "option": "large wedding package",
+                        "price": 4000.00
+                    }
+                ],
+                "details": "https://www.danielmichael.com/weddings-events/"
+            },
+            {
+                "category": "portraits",
+                "prices": [
+                    {
+                        "option": "maternity",
+                        "price": 195
+                    },
+                    {
+                        "option": "newborn",
+                        "price": 255
+                    },
+                    {
+                        "option": "lifestyle",
+                        "price": 325
+                    },
+                    {
+                        "option": "family",
+                        "price": 295
+                    }
+                ],
+                "details": "https://www.danielmichael.com/portraits/"
+            }
+        ],
+        "samples":[
+            "https://www.danielmichael.com/media/coffeetablebooks/001%285%29.jpg",
+            "https://www.danielmichael.com/media/coffeetablebooks/002%285%29.jpg",
+            "https://www.danielmichael.com/media/coffeetablebooks/003%285%29.jpg",
+            "https://www.danielmichael.com/media/coffeetablebooks/004%285%29.jpg"
+        ]
+    },
+
+    {
+        "name": "Maxim Photo Studio",
+        "website": "https://maximphotostudio.com/",
+        "location": {
+                "address": "320 W. Benson St. Suite 150",
+                "city": "Cincinnati",
+                "state": "OH",
+                "zipcode": "45215"
+        },
+        "contact": {
+            "phone": "513-620-4750",
+            "email": "Hello@MaximPhotoStudio.com"
+        },
+        "rating": 5.0,
+        "reviews": 118,
+        "about": "Maxim Photo Studio believes that your wedding day should be captured beautifully, intimately, artistically, and unobtrusively. Our weddings are a celebration of emotions, traditions, pomp and circumstance captured through our documentary and artistic photojournalism styles.",
+        "price-range": "$$",
+        "phote style": ["artistic", "classic", "documentary", "dramatic", "lifestyle", "modern", "vintage"],
+        "services": [
+            {
+                "category": "wedding package",
+                "prices": [
+                    {
+                        "option": "Black Label",
+                        "price": 4450.00
+                    },
+                    {
+                        "option": "Preferred Collection",
+                        "price": 3550.00
+                    },
+                    {
+                        "option": "Essential Collection",
+                        "price": 2850.00
+                    }
+                ],
+                "details": "https://maximphotostudio.com/wedding-photography-investment/"
+            },
+            {
+                "category": "portraits",
+                "prices": [
+                    {
+                        "option": "90 Min Session",
+                        "price": 400.00
+                    },
+                    {
+                        "option": "60 Min Session",
+                        "price": 300.00
+                    },
+                    {
+                        "option": "30 Min Session",
+                        "price": 200.00
+                    },
+                    {
+                        "option": "LinkedIn Session",
+                        "price": 100.00
+                    }
+                ],
+                "details": "https://maximphotostudio.com/wedding-photography-investment/"
+            }
+        ],
+        "samples":[
+            "https://maximphotostudio.com/wp-content/uploads/2016/02/Upham-Arch-Oxford-Ohio-wedding-bride-groom.jpg",
+            "https://maximphotostudio.com/wp-content/uploads/2016/02/Cincinnati-Wedding-Photographers-St-xavier-church-bride-groom.jpg",
+            "https://maximphotostudio.com/wp-content/uploads/2016/02/Cincinnati-Wedding-photographers-Spring-grove-cemetery-reflections.jpg",
+            "https://maximphotostudio.com/wp-content/uploads/2016/02/Cincinnati-wedding-photographer-63018-web.jpg"
+        ]
+    },
+
+    {
+        "name": "Dolce Vita Photography",
+        "website": "http://www.dolce-vita-photography.com/index2.php?v=v1#!/HOME",
+        "location": {
+            "address": "2963 Millville Oxford Rd",
+            "city": "Oxford",
+            "state": "OH",
+            "zipcode": "45056"
+        },
+        "contact": {
+            "phone": "513-717-4155",
+            "email": "DolceVitaPhoto@aol.com"
+        },
+        "rating": 5.0,
+        "reviews": 76,
+        "about": "Our focus is to create images that are unique as you are. Our fly on the wall approach and stylish, modern portraits are why our clients love us. Specializing in documentary style, mixed with artistic touch, creates unforgettable wedding stories for years to come.",
+        "price-range": "$$",
+        "photo style": ["artistic", "classic", "documentary", "dramatic", "lifestyle", "modern", "vintage"],
+        "services": [
+            {
+                "category": "wedding package",
+                "prices": [
+                    {
+                        "option": "Dolce Vita Couture",
+                        "price": 3200.00
+                    },
+                    {
+                        "option": "wedding designer",
+                        "price": 2500.00
+                    }
+                ],
+                "details": "http://www.dolce-vita-photography.com/index2.php?v=v1#!/6/Investment/1"
+            },
+            {
+                "category": "portraits",
+                "prices": [
+                    {
+                        "option": "portraits session",
+                        "price": 300.00
+                    }
+                ],
+                "details": "http://www.dolce-vita-photography.com/index2.php?v=v1#!/6/Investment/1"
+            }
+        ],
+        "samples": [
+            "http://www.dolce-vita-photography.com/index2.php?v=v1#!/4/Proposed/11",
+            "http://www.dolce-vita-photography.com/index2.php?v=v1#!/4/Pose/13",
+            "http://www.dolce-vita-photography.com/index2.php?v=v1#!/4/Pretty/7",
+            "http://www.dolce-vita-photography.com/index2.php?v=v1#!/4/Prep/14"
+        ]
+    },
+
+    {
+        "name": "Wedding Photography by Tammy Bryan",
+        "website": "http://www.tammybryan.com/",
+        "location": {
+            "address": "1148 Samuel Ct",
+            "city": "Union",
+            "state": "KY",
+            "zipcode": "41091"
+        },
+        "contact": {
+            "phone": "859-760-7278",
+            "email": "tammy@tammybryan.com"
+        },
+        "rating": 5.0,
+        "reviews": 65,
+        "about": "On a scale of 1 to 10 my pricing is a 5 or 6, but my photography is a 9 or 10. Check out my site and see for yourself. You'll find 1000s of beautiful photographs, plus ALL my pricing is listed right there. I have no hidden fees and no hidden agendas. It's your story, let's tell it! Contact me today.",
+        "price-range": "$",
+        "photo style": ["artistic", "classic", "documentary", "dramatic", "lifestyle", "modern", "vintage"],
+        "services": [
+            {
+                "category": "wedding package",
+                "prices": [
+                    {
+                        "option": "Black Label Collection",
+                        "price": 4995.00
+                    },
+                    {
+                        "option": "Brides Choice Collection",
+                        "price": 2995.00
+                    },
+                    {
+                        "option": "Diamond Collection",
+                        "price": 2695.00
+                    },
+                    {
+                        "option": "Platinum Collection",
+                        "price": 2195.00
+                    },
+                    {
+                        "option": "Gold Collection",
+                        "price": 1995.00
+                    }
+                ],
+                "details": "http://www.tammybryan.com/469552/wedding-package-prices/"
+            },
+            {
+                "category": "wedding a la carte",
+                "prices": [
+                    {
+                        "option": "Wedding Day Photography",
+                        "price": 1695.00
+                    },
+                    {
+                        "option": "Portrait Session",
+                        "price": 400.00
+                    },
+                    {
+                        "option": "Engagement Photo Session",
+                        "price": 295.00
+                    },
+                    {
+                        "option": "Fusion Wedding Videography",
+                        "price": 495.00
+                    }
+                ],
+                "details": "http://www.tammybryan.com/596619/wedding-a-la-carte-prices/"
+            }
+        ],
+        "samples":[
+            "http://www.tammybryan.com/229237/wedding/",
+            "http://www.tammybryan.com/428558/engagement/",
+            "http://www.tammybryan.com/429412/wedding-fusion-video/"
+        ]
+    },
+
+    {
+        "name": "We Are A Story",
+        "website": "http://weareastory.com/",
+        "location": {
+            "address": "2009 Madison Rd",
+            "city": "Cincinnati",
+            "state": "OH",
+            "zipcode": "45208"
+        },
+        "contact": {
+            "phone": "702-813-7928",
+            "email": "info@weareastory.com"
+        },
+        "rating": 5.0,
+        "reviews": 11,
+        "about": "We are a story! We all are! We all have a purpose, and we've traveled on various roads in life to lead us to where we are today. We believe that each couple's story is worth preserving, and preserving in such a way that tells their story according to who they are.",
+        "price-range": "$",
+        "photo style": ["artistic", "classic", "documentary", "dramatic", "lifestyle", "modern", "vintage"],
+        "services": [
+            {
+                "category": "wedding package",
+                "prices": [
+                    {
+                        "option": "Collection 1",
+                        "price": 4000.00
+                    },
+                    {
+                        "option": "Collection 2",
+                        "price": 4500.00
+                    },
+                    {
+                        "option": "Collection 3",
+                        "price": 5500.00
+                    }
+                ],
+                "details": "http://weareastory.com/pricing/"
+            },
+            {
+                "category": "Extras",
+                "prices": [
+                    {
+                        "option": "Engagement Albums",
+                        "price": 500.00
+                    },
+                    {
+                        "option": "Wedding Day Film",
+                        "price": 3500.00
+                    }
+                ],
+                "details": "http://weareastory.com/pricing/"
+            }
+        ],
+        "samples": [
+            "http://weareastory.com/wp-content/uploads/2018/01/Cincinnati-Wedding-Photographer_We-Are-A-Story_gallery-size-0026.jpg",
+            "http://weareastory.com/wp-content/uploads/2018/01/Cincinnati-Wedding-Photographer_We-Are-A-Story_gallery-size-0054.jpg",
+            "http://weareastory.com/wp-content/uploads/2018/01/Cincinnati-Wedding-Photographer_We-Are-A-Story_gallery-size-0062.jpg",
+            "http://weareastory.com/wp-content/uploads/2018/01/Cincinnati-Wedding-Photographer_We-Are-A-Story_gallery-size-0104-1.jpg"
+        ]
+    }
+]
+}

@@ -1,0 +1,337 @@
+{
+	"djs": [
+    {
+        "name": "Everlasting Sounds",
+        "website": "http://everlastingsounds.com/",
+        "location": {
+            "address": "214 W Benson St",
+            "city": "Reading",
+            "state": "OH",
+            "zipcode": "45215",
+        },
+        "contact": {
+            "phone": "513-260-2780"
+        },
+        "rating": 4.9,
+        "reviews": 16,
+        "about": "Everlasting Sounds, incorporates YOUR dreams, YOUR wishes, and YOUR desires, to create an everlasting impression! Customer service is our number one priority! We provide two dynamic DJs for every wedding. Our spectacular special effects lighting can infuse your reception with your unique touch.",
+        "services": [{
+                "category": "wedding",
+                "prices": [{
+                        "option": "Silver",
+                        "price": 400.00
+                    },
+                    {
+                        "option": "Gold",
+                        "price": 600.00
+                    },
+                    {
+                        "option": "Ruby",
+                        "price": 800.00
+                    }
+                ],
+                "details": "http://everlastingsounds.com/services"
+            },
+            {
+                "category": "event",
+                "prices": [{
+                        "option": "Silver",
+                        "price": 200.00
+                    },
+                    {
+                        "option": "Gold",
+                        "price": 400.00
+                    },
+                    {
+                        "option": "Ruby",
+                        "price": 600.00
+                    }
+                ],
+                "details": "http://everlastingsounds.com/services"
+            }
+        ]
+    },
+    {
+        "name": "Big Daddy Walker Productions",
+        "website": "http://bigdaddywalkerproductions.com/",
+        "location": {
+            "address": "730 Main St",
+            "city": "Milford",
+            "state": "OH",
+            "zipcode": "45150"
+        },
+        "contact": {
+            "phone": "513-678-2107"
+        },
+        "rating": 5.0,
+        "reviews": 8,
+        "about": "Big Daddy Walker offers a team of experienced Cincinnati DJs. Big Daddy himself has been in the professional entertainment industry for over 15 years. He uses his infectious energy and enthusiasm to transform your party into an unforgettable experience. Even more, he provides a knowledge of entertainment and event management skills to create smooth-running, stress-free events.",
+        "services": [{
+                "category": "wedding",
+                "prices": [{
+                        "option": "Basic",
+                        "price": 800.00
+                    },
+                    {
+                        "option": "Diamond",
+                        "price": 1200.00
+                    },
+                    {
+                        "option": "Platinum",
+                        "price": 1500.00
+                    }
+                ],
+                "details": "https://bigdaddywalkerproductions.com/packages/"
+            },
+            {
+                "category": "event",
+                "prices": [{
+                        "option": "Basic",
+                        "price": 300.00
+                    },
+                    {
+                        "option": "Diamond",
+                        "price": 600.00
+                    },
+                    {
+                        "option": "Platinum",
+                        "price": 800.00
+                    }
+                ],
+                "details": "https://bigdaddywalkerproductions.com/packages/"
+            }
+        ]
+    },
+    {
+        "name": "The Music Concierge",
+        "website": "http://themusicconcierge.com/",
+        "location": {
+            "address": "1522 Dixie Hwy Ste 125",
+            "city": "Park Hills",
+            "state": "KY",
+            "zipcode": "41011"
+        },
+        "contact": {
+            "phone": "513-716-1136"
+        },
+        "rating": 4.9,
+        "reviews": 16,
+        "about": "The Music Concierge serves as your go to guide to the single most valuable component of your event; the entertainment. If you want your day to be as fun and memorable as it deserves to be, then having a professional that cares like you care is essential. We're here for you. Our job is to help you make sure that your guests are thoroughly entertained. After all, isn't that the point? That's why we strive to help you create custom crafted celebrations based on your vision, your desires & your expectations.",
+        "services": [
+                 {
+                 "category": "wedding",
+                 "prices": [
+                            {
+                            "option": "Platinum",
+                            "price": 1600.00
+                            },
+                            {
+                            "option": "24k",
+                            "price": 1200.00
+                            },
+                            {
+                            "option": "18k",
+                            "price": 1000.00
+                            },
+                            {
+                            "option": "14k",
+                            "price": 800.00
+                            }
+                            ],
+                 "details": "https://www.themusicconcierge.com/weddings/"
+                 },
+                 {
+                 "category": "event",
+                 "prices": [
+                            {
+                            "option": "Boardroom",
+                            "price": 800.00
+                            },
+                            {
+                            "option": "Essentials",
+                            "price": 600.00
+                            },
+                            {
+                            "option": "Audio visual",
+                            "price": 1000.00
+                            }
+                            ],
+                 "details": "https://www.themusicconcierge.com/events/corporate-events/"
+            },
+        ]
+    },
+    {
+        "name": "Party Pleasers Services",
+        "website": "http://partypleasersservices.com/",
+        "location": {
+            "address": "4140 Linden Ave #203",
+            "city": "Dayton",
+            "state": "OH",
+            "zipcode": "45432"
+        },
+        "contact": {
+            "phone": "937-254-6935"
+        },
+        "rating": 4.7,
+        "reviews": 32,
+        "about": "At Party Pleasers we specialize in Weddings, Bar/Bat Mitzvahs, School Dances, Audio Visual Services, Corporate Events,  and Private Parties. Voted best Cincinnati DJ and Dayton DJ, you can create your unique event by selecting your own music, lighting, and décor! Assisting you in developing your personal style, we create an event unique to you. Knowing your DJ is a Master of Ceremonies will ensure your event goes smoothly while guaranteeing the perfect night to remember!",
+        "services": [
+                 {
+                 "category": "wedding",
+                 "prices": [
+                            {
+                            "option": "Bronze",
+                            "price": 700.00
+                            },
+                            {
+                            "option": "Silver",
+                            "price": 900.00
+                            },
+                            {
+                            "option": "Gold",
+                            "price": 1200.00
+                            },
+                            {
+                            "option": "Platinum",
+                            "price": 1500.00
+                            }
+                            ],
+                 "details": "https://partypleasersservices.com/weddings/reception-packages/"
+                 },
+                 {
+                 "category": "event",
+                 "prices": [
+                            {
+                            "option": "Basic",
+                            "price": 500.00
+                            },
+                            {
+                            "option": "Deluxe",
+                            "price": 700.00
+                            },
+                            {
+                            "option": "Photo Booth",
+                            "price": 600.00
+                            },
+                            {
+                            "option": "DJ Rental",
+                            "price": 250.00
+                            }
+                            ],
+                 "details": "https://partypleasersservices.com/parties/party-packages/"
+            }
+        ]
+    },
+    
+    {
+        "name": "DJ Blaze",
+        "website": "http://djblazedc.com/",
+        "location": {
+        "address": "312 Walnut St",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zipcode": "45202"
+        },
+        "contact": {
+            "phone": "513-449-0484"
+        },
+        "rating": 5.0,
+        "reviews": 23,
+        "about": "Whether it is a corporate event, wedding, birthday, night club or any other type of private or social gathering, DJ Blaze has the unique ability to not only play the right type of music at the right time, but entertain and motivate the audience as well! DJ Blaze understands that it's important to ensure your guests have a great time...young and old alike. Need someone to step into an event, read the crowd and provide the perfect mix to help make the evening memorable? Meet DJ Blaze! ",
+        "services": [
+         {
+             "category": "wedding",
+             "prices": [
+                        {
+                        "option": "Silver",
+                        "price": 200.00
+                        },
+                        {
+                        "option": "Gold",
+                        "price": 400.00
+                        },
+                        {
+                        "option": "Platinum",
+                        "price": 600.00
+                        }
+                        ],
+             "details": "https://www.djblazedc.com/contact.html"
+             },
+             {
+             "category": "event",
+             "prices": [
+                        {
+                        "option": "Silver",
+                        "price": 100.00
+                        },
+                        {
+                        "option": "Gold",
+                        "price": 250.00
+                        },
+                        {
+                        "option": "Platinum",
+                        "price": 400.00
+                        }
+                        ],
+             "details": "https://www.djblazedc.com/contact.html"
+         }
+         ]
+    },
+            
+    {
+        "name": "Showtime Cincinnati",
+        "website": "http://showtimecincinnati.com/",
+        "location": {
+        "address": "5610 Cheviot Rd",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zipcode": "45247"
+        },
+        "contact": {
+        "phone": "513-746-9846"
+        },
+        "rating": 4.8,
+        "reviews": 22,
+        "about": "Showtime Cincinnati would love to provide music, microphones, and other services for your Ceremony! We'll even meet with you and help you choose songs as you plan your Ceremony",
+        "services": [
+         {
+             "category": "wedding",
+             "prices": [
+                        {
+                        "option": "Silver",
+                        "price": 500.00
+                        },
+                        {
+                        "option": "Gold",
+                        "price": 700.00
+                        },
+                        {
+                        "option": "Platinum",
+                        "price": 900.00
+                        }
+                        ],
+             "details": "http://www.showtimecincinnati.com/packages.html"
+             },
+             {
+             "category": "event",
+             "prices": [
+                        {
+                        "option": "Silver",
+                        "price": 100.00
+                        },
+                        {
+                        "option": "Gold",
+                        "price": 300.00
+                        },
+                        {
+                        "option": "Platinum",
+                        "price": 500.00
+                        }
+                        ],
+             "details": "http://www.showtimecincinnati.com/packages.html"
+         }
+         ]
+    }
+
+]
+}

@@ -1,0 +1,275 @@
+{
+
+"receptions": [
+{
+    "name": "Receptions Event Centers",
+    "website": "http://receptionsinc.com/",
+    "location": {
+         "address": "3302 Westbourne Drive",
+         "city": "Cincinnati",
+         "state": "OH",
+         "zipcode": "45248"
+     },
+    "contact": {
+        "phone": "859-746-2700",
+        "email": "events@receptionsinc.com"
+    },
+    "rating": 4.5,
+    "reviews": 89,
+    "about": "The award-winning Receptions Conference Center offers an astounding six locations for couples to choose from as the venue for their special day. They provide a blend of personal services, delicious food and excellent value that is unparalleled in the Tri-State area.",
+    "price-range": "$$",
+    "amenities": ["bridal suite", "handicap accessible", "liability insurance", "on-site accommondations", "indoor", "reception area", "wireless Internet"],
+    "services": [
+    {
+         "category": "wedding ceremony",
+         "prices": [
+                    {
+                    "option": "ceremony in separate room",
+                    "price": 3500.00
+                    },
+                    {
+                    "option": "ceremony in same room as reception",
+                    "price": 3450.00
+                    },
+                    {
+                    "option": "ceremony in same room",
+                    "price": 3400.00
+                    }
+                    ],
+         "details": "http://receptionsinc.com/weddings/wedding-ceremonies/"
+         }
+        ]
+},
+               
+{
+    "name": "The Phoenix",
+    "website": "http://www.thephx.com/",
+    "location": {
+        "address": "812 Race Street",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zipcode": "45202"
+    },
+    "contact": {
+    "phone": "513-721-8901",
+    "email": "Info@ThePHX.com"
+    },
+    "rating": 4.4,
+    "reviews": 51,
+    "about": "The Phoenix is a National Historic Landmark and THE place to host your dream wedding ceremony and reception. Our on-site wedding coordinators will help you every step of the way and make sure your entire wedding experience is flawless and personalized.",
+    "price-range": "$$",
+    "amenities": ["bridal suite", "handicap accessible", "liability insurance", "indoor", "wireless Internet"],
+    "services": [
+    {
+        "category": "wedding reception",
+        "prices": [
+                   {
+                   "option": "Silver",
+                   "price": 8600.00
+                   },
+                   {
+                   "option": "Gold",
+                   "price": 134.00
+                   },
+                   {
+                   "option": "Diamond",
+                   "price": 169.00
+                   }
+                   ],
+        "details": "http://www.thephx.com/media/documents/2018%20Wedding%20Packages.pdf"
+    },
+    {
+        "category": "wedding ceremony",
+        "prices": [
+                   {
+                   "option": "Grand Ballroom",
+                   "price": 600.00
+                   },
+                   {
+                   "option": "Archway Ballroom",
+                   "price": 400.00
+                   }
+                   ],
+        "details": "http://www.thephx.com/special-events/our-event-rooms-5/"
+    }
+    ]
+},
+
+{
+    "name": "The Madison Event Center",
+    "website": "http://thecovingtonmadison.com/",
+    "location": {
+    "address": "700 Madison Avenue",
+    "city": "Covinton",
+    "state": "KY",
+    "zipcode": "41011"
+    },
+    "contact": {
+    "phone": "859-261-1117"
+    },
+    "rating": 4.2,
+    "reviews": 97,
+    "about": "Located in the heart of beautiful, historic downtown Covington, we have hosted over 10,000 events. With 6 magnificent reception ballrooms, accommodating up to 375 guests, and spacious rooms for ceremonies and rehearsal dinners, we offer many elegant options.",
+    "price-range": "$$",
+    "amenities": ["bridal suite", "handicap accessible", "liability insurance", "on-site accommondations", "indoor", "outdoor", "wireless Internet"],
+    "services": [
+    {
+        "category": "wedding reception",
+        "prices": [
+                   {
+                   "option": "Silver Plated Dinner",
+                   "price": 5800.00
+                   },
+                   {
+                   "option": "Gold Plated Dinner",
+                   "price": 60.00
+                   },
+                   {
+                   "option": "Platinum Plated Dinner",
+                   "price": 70.00
+                   }
+                   ],
+        "details": "http://thecovingtonmadison.com/weddings/food-beverage/"
+    },
+    {
+        "category": "wedding ceremony",
+        "prices": [
+                   {
+                   "option": "The Grande",
+                   "price": 800.00,
+                   },
+                   {
+                   "option": "The Emerald",
+                   "price": 750.00
+                   },
+                   {
+                   "option": "The Crystal",
+                   "price": 700.00
+                   },
+                   {
+                   "option": "The Madison",
+                   "price": 650.00
+                   }
+                   ],
+        "details": "http://thecovingtonmadison.com/weddings/the-grande/"
+    }
+    ]
+},
+
+{
+    "name": "Hilton Cincinnati Netherland Plaza",
+    "website": "http://www3.hilton.com/en/hotels/ohio/hilton-cincinnati-netherland-plaza-CVGNPHF/event/weddings.html",
+    "location": {
+        "address": "35 W 5th Steet",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zipcode": "45202"
+    },
+    "contact": {
+    "phone": "513-421-9100"
+    },
+    "rating": 4.4,
+    "reviews": 1456,
+    "about": "National Historic Landmark featuring some of the world's finest examples of French art deco. Three breathtaking ballrooms that create a sense of timeless elegance and romance in a setting that is one-of-a-kind.",
+    "price-range": "$$$",
+    "amenities": ["handicap accessible", "on-site accommondations", "indoor", "wireless Internet"],
+    "services": [
+    {
+        "category": "wedding reception",
+        "prices": [
+                   {
+                   "option": "Emery Wedding",
+                   "price": 9000.00
+                   },
+                   {
+                   "option": "Queen City Wedding",
+                   "price": 65.00
+                   }
+                   ],
+        "details": "https://www.theknot.com/marketplace/hilton-cincinnati-netherland-plaza-cincinnati-oh-541790"
+    },
+    {
+        "category": "wedding ceremony",
+        "prices": [
+                   {
+                   "option": "Continental Ballroom",
+                   "price": 1000.00
+                   },
+                   {
+                   "option": "Hall of Mirrors",
+                   "price": 1250.00
+                   },
+                   {
+                   "option": "Pavillion Caprice Ballroom",
+                   "price": 1250.00
+                   }
+                   ],
+        "details": "https://www.theknot.com/marketplace/hilton-cincinnati-netherland-plaza-cincinnati-oh-541790"
+    }
+    ]
+},
+
+{
+    "name": "Oasis Conference Center",
+    "website": "http://www.oasisgolfclub.com/-new-ceremony-site-oasis-gazebo",
+    "location": {
+        "address": "902 Loveland Miamiville Rd",
+        "city": "Loveland",
+        "state": "OH",
+        "zipcode": "45140"
+    },
+    "contact": {
+    "phone": "513-583-8383"
+    },
+    "rating": 4.4,
+    "reviews": 91,
+    "about": "Situated in a spectacular Arnold Palmer-designed golf course, Oasis Conference Center offers a unique wedding or rehearsal dinner location. Oasis offers indoor and outdoor ceremonies, and indoor receptions.",
+    "price-range": "$$",
+    "amenities": ["bridal suite", "handicap accessible", "liability insurance", "indoor", "outdoor", "wireless Internet"],
+    "services": [
+    {
+        "category": "wedding reception",
+        "prices": [
+                   {
+                   "option": "Shimmering Wedding",
+                   "price": 7000.00
+                   },
+                   {
+                   "option": "Stunning Wedding",
+                   "price": 52.99
+                   },
+                   {
+                   "option": "Sparkling Wedding",
+                   "price": 58.99
+                   },
+                   {
+                   "option": "spectacular Wedding",
+                   "price": 62.99
+                   }
+                   ],
+        "details": "https://www.theknot.com/marketplace/oasis-conference-center-loveland-oh-205673"
+    },
+    {
+        "category": "wedding ceremony",
+        "prices": [
+                   {
+                   "option": "Outdoor Wedding Ceremony",
+                   "price": 2000.00
+                   },
+                   {
+                   "option": "Indoor Wedding Ceremony I",
+                   "price": 1500.00
+                   },
+                   {
+                   "option": "Indoor Wedding Ceremony II",
+                   "price": 2500.00
+                   }
+                   ],
+        "details": "https://www.theknot.com/marketplace/oasis-conference-center-loveland-oh-205673"
+    }
+    ]
+}
+               
+]
+}
+

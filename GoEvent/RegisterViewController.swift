@@ -125,10 +125,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             catch {
                 print(error.localizedDescription)
             }
+
+            let mySC = self.storyboard?.instantiateViewController(withIdentifier: "loadingTabBarController") as! loadingTabBarController
             
-        let mySC = self.storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") as! CreateEventViewController
-        
-        self.navigationController?.pushViewController(mySC, animated: true)
+            
+            
+            self.navigationController?.pushViewController(mySC, animated: true)
         }
         
     }
