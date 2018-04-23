@@ -643,8 +643,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Phtotographer" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-ks-nU1" userLabel="Photographer">
-                                <rect key="frame" x="16" y="476" width="173" height="41"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Photographer" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-ks-nU1" userLabel="Photographer">
+                                <rect key="frame" x="16" y="476" width="173" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>

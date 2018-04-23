@@ -26,9 +26,8 @@ class ShowDetailsViewController: UIViewController {
     var cost: Double!
     var budget: Double!
     
-    
-    var curEvent: Results<currentEvent>!
     var savedEvent: Results<event>!
+    var category: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +37,14 @@ class ShowDetailsViewController: UIViewController {
         textAbout?.text = about
         labelAddress?.text = address
         labelCost?.text = "Estimated Cost: $" + String(format: "%.2f", cost)
-        //print(vendorName!)
+        print(vendorName!)
         //view.backgroundColor = UIColor.white
         
         do {
             let realm = try Realm()
-            curEvent = realm.objects(currentEvent.self)
+            savedEvent = realm.objects(event.self)
             
-            if let event1 = curEvent.first{
+            if let event1 = savedEvent.first{
                 print(event1.budget)
                 budget = Double(event1.budget)
                 print(budget)
@@ -56,6 +55,7 @@ class ShowDetailsViewController: UIViewController {
         catch {
             print(error.localizedDescription)
         }
+        print(category)
     }
     
     
@@ -68,7 +68,7 @@ class ShowDetailsViewController: UIViewController {
     @IBAction func addClicked(_ sender: Any) {
         budget = budget - cost
         //print(budget)
-        if budget < 0 {
+        if budget < 0 || budget < cost {
             let alert = UIAlertController(title: "Sorry!", message: "You are out of budget!", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -81,10 +81,10 @@ class ShowDetailsViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                     budget = budget + cost
+                    //print(vendor[0].category)
                 } else {
-                    let newVendor = Vendor(value: ["name" : vendorName, "cost": cost])
+                    let newVendor = Vendor(value: ["name" : vendorName, "cost": cost, "category": category])
                     try realm.write {
-                        
                         realm.add(newVendor)
                     }
                     let alert = UIAlertController(title: "Done!", message: "This vendor is added!", preferredStyle: UIAlertControllerStyle.alert)
@@ -97,5 +97,22 @@ class ShowDetailsViewController: UIViewController {
             }
         }
         
+        //update the budget
+        do {
+            let realm = try Realm()
+            savedEvent = realm.objects(event.self)
+            
+            if let event = savedEvent.first{
+                try realm.write {
+                    event.budget = String(budget)
+                    print(event.budget)
+                }
+            }
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        
     }
 }
+

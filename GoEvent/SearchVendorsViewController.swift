@@ -177,7 +177,7 @@ class SearchVendorsViewController: UIViewController, UIPickerViewDelegate, UIPic
                 destination.about = arrayFoundAbouts[indexPath]
                 destination.address = arrayFoundLocations[indexPath]
                 destination.cost = arrayFoundPrices[indexPath]
-                
+                destination.category = self.categoryField.text
             }
         }
     }
@@ -528,6 +528,10 @@ extension SearchVendorsViewController: MKMapViewDelegate {
                 
             }
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 /*

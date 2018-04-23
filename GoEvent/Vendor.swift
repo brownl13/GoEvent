@@ -12,5 +12,5 @@ import RealmSwift
 class Vendor: Object {
     @objc dynamic var name = ""
     @objc dynamic var cost = 0.0
-    @objc dynamic var type = ""
+    @objc dynamic var category = ""
 }

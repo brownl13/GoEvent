@@ -50,7 +50,28 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
             print(error.localizedDescription)
         }
         
-        
+        for ven in vendors {
+            if ven.category == "Photographer" {
+                pName.text = ven.name
+                pCost.text = String(ven.cost)
+            }
+            else if ven.category == "Reception" {
+                vName.text = ven.name
+                vCost.text = String(ven.cost)
+            }
+            else if ven.category == "Beauty" {
+                bName.text = ven.name
+                bCost.text = String(ven.cost)
+            }
+            else if ven.category == "Florist" {
+                fName.text = ven.name
+                fCost.text = String(ven.cost)
+            }
+            else if ven.category == "DJ" {
+                dName.text = ven.name
+                dCost.text = String(ven.cost)
+            }
+        }
         cEvent = current[0]
         user2 = savedUser[0]
         
