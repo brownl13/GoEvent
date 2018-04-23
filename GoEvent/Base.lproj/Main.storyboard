@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-yW-1Hr">
                                 <rect key="frame" x="26" y="275" width="77" height="35"/>
@@ -195,7 +195,9 @@
                         <color key="backgroundColor" red="0.059967770240000003" green="0.28191375229999999" blue="0.47706849089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wvV-11-fdv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Create" image="icons8-plus-50.png" id="Xbv-fi-dwn"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="icons8-plus-50" id="Xbv-fi-dwn">
+                        <inset key="largeContentSizeImageInsets" minX="-1" minY="-1" maxX="-1" maxY="-1"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="budget" destination="MxY-IZ-L7Q" id="P8K-9O-Cqs"/>
                         <outlet property="eventName" destination="Amk-UN-MQe" id="Azh-BS-Ojh"/>
@@ -786,6 +788,7 @@
                 <tabBarController storyboardIdentifier="weddingPlanned" automaticallyAdjustsScrollViewInsets="NO" id="OCP-RC-axd" customClass="weddingPlanned" customModule="GoEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="52y-Ng-WA6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -804,6 +807,7 @@
                 <tabBarController storyboardIdentifier="loadingTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="eaW-li-EjH" customClass="loadingTabBarController" customModule="GoEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ft-Ga-CXd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -861,6 +865,6 @@
     <resources>
         <image name="arrow.png" width="242" height="208"/>
         <image name="icons8-ok-50" width="50" height="50"/>
-        <image name="icons8-plus-50.png" width="50" height="50"/>
+        <image name="icons8-plus-50" width="50" height="50"/>
     </resources>
 </document>

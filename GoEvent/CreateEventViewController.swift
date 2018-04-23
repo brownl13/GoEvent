@@ -32,15 +32,15 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         self.eventName.delegate = self
         self.guests.delegate = self
         self.budget.delegate = self
-        
+        self.navigationItem.setHidesBackButton(true, animated: false)
        /* let realm = try! Realm()
         try! realm.write {
             realm.delete(realm.objects(event.self))
         } */
         
-        self.navigationItem.setHidesBackButton(true, animated:true);
         
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.eventName.delegate = self
@@ -58,7 +58,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         guests.text = ""
         budget.text = ""
         
-        self.navigationItem.setHidesBackButton(true, animated:true);
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
