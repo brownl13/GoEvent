@@ -89,7 +89,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             
         }
         
-        else if (email.text?.isEmpty)! || (isValidEmail(testStr: email.text!)) {
+        else if (email.text?.isEmpty)! || !(isValidEmail(testStr: email.text!)) {
             
             let alert = UIAlertController(title: "Sorry!", message: "Please enter a valid email!", preferredStyle: UIAlertControllerStyle.alert)
             

@@ -32,7 +32,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         self.eventName.delegate = self
         self.guests.delegate = self
         self.budget.delegate = self
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        
        /* let realm = try! Realm()
         try! realm.write {
             realm.delete(realm.objects(event.self))
@@ -58,6 +58,7 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
         guests.text = ""
         budget.text = ""
         
+        self.tabBarController?.navigationItem.hidesBackButton = true
         
     }
     
