@@ -156,6 +156,9 @@ class SearchVendorsViewController: UIViewController, UIPickerViewDelegate, UIPic
         searchButton.layer.cornerRadius = 5
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.hidesBackButton = true
+    }
     
     //Show Navigation Bar when user click to go to another View Controller
     override func viewWillDisappear(_ animated: Bool) {

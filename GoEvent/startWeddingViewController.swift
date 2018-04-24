@@ -34,6 +34,15 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
     var vendors: Results<Vendor>!
     var currentVendor = Vendor()
     var finished = false
+    var vendors2 = [Vendor]()
+    var remainingBudget = 0.0
+    var startingBudget = ""
+    var endingBudget = ""
+    var message = ""
+    var message2 = ""
+    var message3 = ""
+    var message4 = ""
+    var message5 = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,88 +53,205 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
             savedEvent = realm.objects(event.self)
             current = realm.objects(currentEvent.self)
             vendors = realm.objects(Vendor.self)
+            for v in vendors {
+                vendors2.append(v)
+            }
+            
             
         }
         catch {
             print(error.localizedDescription)
         }
         
-        for ven in vendors {
-            if ven.category == "Photographer" {
-                pName.text = ven.name
-                pCost.text = String(ven.cost)
-            }
-            else if ven.category == "Reception" {
-                vName.text = ven.name
-                vCost.text = String(ven.cost)
-            }
-            else if ven.category == "Beauty" {
-                bName.text = ven.name
-                bCost.text = String(ven.cost)
-            }
-            else if ven.category == "Florist" {
-                fName.text = ven.name
-                fCost.text = String(ven.cost)
-            }
-            else if ven.category == "DJ" {
-                dName.text = ven.name
-                dCost.text = String(ven.cost)
-            }
-        }
         cEvent = current[0]
         user2 = savedUser[0]
+        remainingBudget = Double(cEvent.budget)!
         
-       
         let numberFormater = NumberFormatter()
         numberFormater.numberStyle = NumberFormatter.Style.currency
-        let formattedBudget = numberFormater.string(from: NSNumber(value: Double(cEvent.budget)!))
+        startingBudget = numberFormater.string(from: NSNumber(value: remainingBudget))!
+        
+        if cEvent.pname == "" {
+            
+        }
+        else {
+        pName.text = cEvent.pname
+        pCost.text = numberFormater.string(from: NSNumber(value: cEvent.pcost))
+        remainingBudget = remainingBudget - cEvent.pcost
+        }
+        
+        if cEvent.vname == "" {
+            
+        }
+        else{
+        vName.text = cEvent.vname
+        vCost.text = numberFormater.string(from: NSNumber(value: cEvent.vcost))
+        remainingBudget = remainingBudget - cEvent.vcost
+        }
+        
+        if cEvent.bname == "" {
+            
+        }
+        else {
+        bName.text = cEvent.bname
+        bCost.text = numberFormater.string(from: NSNumber(value: cEvent.bcost))
+        remainingBudget = remainingBudget - cEvent.bcost
+        }
+        
+        if cEvent.fname == "" {
+            
+        }
+        else {
+        fName.text = cEvent.fname
+        fCost.text = numberFormater.string(from: NSNumber(value: cEvent.fcost))
+        remainingBudget = remainingBudget - cEvent.fcost
+        }
+        
+        if cEvent.dname == "" {
+            
+        }
+        else {
+        dName.text = cEvent.dname
+        dCost.text = numberFormater.string(from: NSNumber(value: cEvent.dcost))
+        remainingBudget = remainingBudget - cEvent.dcost
+        }
+        
+        do {
+            let realm = try Realm()
+            for e in savedEvent {
+                if e.eventName == cEvent.eventName && e.username == cEvent.username {
+                    try realm.write {
+                        e.pcost = cEvent.pcost
+                        e.pname = cEvent.pname
+                        e.bcost = cEvent.bcost
+                        e.bname = cEvent.bname
+                        e.fcost = cEvent.fcost
+                        e.fname = cEvent.fname
+                        e.dcost = cEvent.dcost
+                        e.dname = cEvent.dname
+                        e.vcost = cEvent.vcost
+                        e.vname = cEvent.vname
+                    }
+                }
+            }
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        
+       
+        
+        let formattedBudget = numberFormater.string(from: NSNumber(value: remainingBudget))
+        endingBudget = formattedBudget!
         budget.text = formattedBudget
+    
+    vendors2.removeAll()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        
         do {
             let realm = try Realm()
             savedUser = realm.objects(user.self)
             savedEvent = realm.objects(event.self)
             current = realm.objects(currentEvent.self)
             vendors = realm.objects(Vendor.self)
+            for v in vendors {
+                vendors2.append(v)
+            }
+            
             
         }
         catch {
             print(error.localizedDescription)
         }
         
-        for ven in vendors {
-            if ven.category == "Photographer" {
-                pName.text = ven.name
-                pCost.text = String(ven.cost)
-            }
-            else if ven.category == "Reception" {
-                vName.text = ven.name
-                vCost.text = String(ven.cost)
-            }
-            else if ven.category == "Beauty" {
-                bName.text = ven.name
-                bCost.text = String(ven.cost)
-            }
-            else if ven.category == "Florist" {
-                fName.text = ven.name
-                fCost.text = String(ven.cost)
-            }
-            else if ven.category == "DJ" {
-                dName.text = ven.name
-                dCost.text = String(ven.cost)
-            }
-        }
         cEvent = current[0]
         user2 = savedUser[0]
-        
-        
+        remainingBudget = Double(cEvent.budget)!
         let numberFormater = NumberFormatter()
         numberFormater.numberStyle = NumberFormatter.Style.currency
-        let formattedBudget = numberFormater.string(from: NSNumber(value: Double(cEvent.budget)!))
+        startingBudget = numberFormater.string(from: NSNumber(value: remainingBudget))!
+        
+        if cEvent.pname == "" {
+            
+        }
+        else {
+            pName.text = cEvent.pname
+            pCost.text = numberFormater.string(from: NSNumber(value: cEvent.pcost))
+            remainingBudget = remainingBudget - cEvent.pcost
+        }
+        
+        if cEvent.vname == "" {
+            
+        }
+        else{
+            vName.text = cEvent.vname
+            vCost.text = numberFormater.string(from: NSNumber(value: cEvent.vcost))
+            remainingBudget = remainingBudget - cEvent.vcost
+        }
+        
+        if cEvent.bname == "" {
+            
+        }
+        else {
+            bName.text = cEvent.bname
+            bCost.text = numberFormater.string(from: NSNumber(value: cEvent.bcost))
+            remainingBudget = remainingBudget - cEvent.bcost
+        }
+        
+        if cEvent.fname == "" {
+            
+        }
+        else {
+            fName.text = cEvent.fname
+            fCost.text = numberFormater.string(from: NSNumber(value: cEvent.fcost))
+            remainingBudget = remainingBudget - cEvent.fcost
+        }
+        
+        if cEvent.dname == "" {
+            
+        }
+        else {
+            dName.text = cEvent.dname
+            dCost.text = numberFormater.string(from: NSNumber(value: cEvent.dcost))
+            remainingBudget = remainingBudget - cEvent.dcost
+        }
+        
+        
+        do {
+            let realm = try Realm()
+            for e in savedEvent {
+                if e.eventName == cEvent.eventName && e.username == cEvent.username {
+                    try realm.write {
+                        e.pcost = cEvent.pcost
+                        e.pname = cEvent.pname
+                        e.bcost = cEvent.bcost
+                        e.bname = cEvent.bname
+                        e.fcost = cEvent.fcost
+                        e.fname = cEvent.fname
+                        e.dcost = cEvent.dcost
+                        e.dname = cEvent.dname
+                        e.vcost = cEvent.vcost
+                        e.vname = cEvent.vname
+                    }
+                }
+            }
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        
+        let formattedBudget = numberFormater.string(from: NSNumber(value: remainingBudget))
         budget.text = formattedBudget
+        endingBudget = formattedBudget!
+        
+        vendors2.removeAll()
     }
     
     
@@ -141,7 +267,36 @@ class startWeddingViewController: UIViewController, MFMailComposeViewControllerD
         // Configure the fields of the interface.
         composeVC.setToRecipients([user2.email])
         composeVC.setSubject("Your event details")
-        composeVC.setMessageBody("Thank you " + user2.name + " for using GoEvent to plan your event. Below is the details of your event:\n\n" + "Event Name: " + event2.eventName + "\nEvent Type: " + event2.eventType + "\nNumber of Guests: " + event2.numGuests + "\nBudget: " + event2.budget, isHTML: false)
+        
+        message = "Thank you " + user2.name + " for using GoEvent to plan your event. Below is the details of your event:\n\n" + "Event Name: " + cEvent.eventName + "\nEvent Type: " + cEvent.eventType
+        message.append("Number of Guests")
+        message.append(event2.numGuests)
+        message.append("\nStarting Budget: ")
+        message.append(startingBudget)
+        message.append("\nRemaining Budget: ")
+        message.append(String(remainingBudget))
+        message.append("\n\nPhotgrapher Name: ")
+        message.append(cEvent.pname)
+        message.append("\nPhotgrapher Cost: ")
+        message.append(String(cEvent.pcost))
+        message.append("\n\nBeauty Name: ")
+        message.append(cEvent.bname)
+        message.append("\nBeauty Cost: ")
+        message.append(String(cEvent.bcost))
+        message.append("\n\nFlorist Name: ")
+        message.append(cEvent.fname)
+        message.append("\nFlorist Cost: ")
+        message.append(String(cEvent.fcost))
+        message.append("\n\nDJ Name: ")
+        message.append(cEvent.dname)
+        message.append("\nDJ Cost: ")
+        message.append(String(cEvent.dcost))
+        message.append("\n\nReception Name: ")
+        message.append(cEvent.vname)
+        message.append("\nReception Cost: ")
+        message.append(String(cEvent.vcost))
+        
+        composeVC.setMessageBody(message, isHTML: false)
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
         

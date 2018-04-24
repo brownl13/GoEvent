@@ -170,12 +170,32 @@ class CreateEventViewController: UIViewController, UITextFieldDelegate {
                     curEvent2.numGuests = guests.text!
                     curEvent2.email = user1.email
                     curEvent2.username = user1.name
+                    curEvent2.pcost = 0.0
+                    curEvent2.pname = ""
+                    curEvent2.bcost = 0.0
+                    curEvent2.bname = ""
+                    curEvent2.fcost = 0.0
+                    curEvent2.fname = ""
+                    curEvent2.dcost = 0.0
+                    curEvent2.dname = ""
+                    curEvent2.vcost = 0.0
+                    curEvent2.vname = ""
                     event2.budget = budget.text!
                     event2.eventName = eventName.text!
                     event2.eventType = selection
                     event2.numGuests = guests.text!
                     event2.email = user1.email
                     event2.username = user1.name
+                    event2.pcost = 0.0
+                    event2.pname = ""
+                    event2.bcost = 0.0
+                    event2.bname = ""
+                    event2.fcost = 0.0
+                    event2.fname = ""
+                    event2.dcost = 0.0
+                    event2.dname = ""
+                    event2.vcost = 0.0
+                    event2.vname = ""
                     realm.add(event2)
                     realm.add(curEvent2)
                 }

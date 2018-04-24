@@ -52,6 +52,29 @@ class savedEvents: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.hidesBackButton = true
+        
+        events.removeAll()
+        
+        
+        do {
+            
+            let realm = try Realm()
+            savedEvent = realm.objects(event.self)
+            savedUser = realm.objects(user.self)
+            
+            for e in savedEvent {
+                
+                if e.username == savedUser[0].name {
+                    events.append(e)
+                    
+                }
+                
+            }
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        
         self.eventTable.reloadData()
     }
     
