@@ -16,6 +16,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var password: UITextField!
    
     var user1 = user()
+    var savedVendors: Results<Vendor>!
     
     
     override func viewDidLoad() {
@@ -25,10 +26,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         self.email.delegate = self
         self.password.delegate = self
         
-        /*let realm = try! Realm()
+        let realm = try! Realm()
+        savedVendors = realm.objects(Vendor.self)
        try! realm.write {
-            realm.deleteAll()
-        } */
+            realm.delete(savedVendors)
+        }
         
         
     }

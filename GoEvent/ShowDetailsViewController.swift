@@ -25,13 +25,15 @@ class ShowDetailsViewController: UIViewController {
     var address: String!
     var cost: Double!
     var budget: Double!
-    
-    var savedEvent: Results<event>!
+    var savedUser: Results<user>!
+    var savedVendors: Results<Vendor>!
+    var savedEvent: Results<currentEvent>!
     var category: String!
+    var typeTaken: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        typeTaken = false
         labelName?.text = vendorName
         labelWebsite?.text = website
         textAbout?.text = about
@@ -42,8 +44,8 @@ class ShowDetailsViewController: UIViewController {
         
         do {
             let realm = try Realm()
-            savedEvent = realm.objects(event.self)
-            
+            savedEvent = realm.objects(currentEvent.self)
+            savedVendors = realm.objects(Vendor.self)
             if let event1 = savedEvent.first{
                 print(event1.budget)
                 budget = Double(event1.budget)
@@ -84,8 +86,26 @@ class ShowDetailsViewController: UIViewController {
                     //print(vendor[0].category)
                 } else {
                     let newVendor = Vendor(value: ["name" : vendorName, "cost": cost, "category": category])
+                    for ven in savedVendors {
+                        if ven.category == newVendor.category {
+                                typeTaken = true
+                        }
+                    }
+                    if typeTaken {
+                        for ven in savedVendors {
+                            if ven.category == newVendor.category {
+                                try realm.write{
+                                ven.name = newVendor.name
+                                ven.cost = newVendor.cost
+                                }
+                                break
+                            }
+                        }
+                    }
+                    else {
                     try realm.write {
                         realm.add(newVendor)
+                    }
                     }
                     let alert = UIAlertController(title: "Done!", message: "This vendor is added!", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -100,7 +120,7 @@ class ShowDetailsViewController: UIViewController {
         //update the budget
         do {
             let realm = try Realm()
-            savedEvent = realm.objects(event.self)
+            savedEvent = realm.objects(currentEvent.self)
             
             if let event = savedEvent.first{
                 try realm.write {
