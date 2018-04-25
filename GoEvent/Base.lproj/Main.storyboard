@@ -72,7 +72,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdO-is-SZ7">
                                 <rect key="frame" x="136" y="548" width="103" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.png">
+                                <state key="normal" image="arrow">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -174,7 +174,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-ao-fT5">
                                 <rect key="frame" x="141" y="537" width="88" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow.png"/>
+                                <state key="normal" image="arrow"/>
                                 <connections>
                                     <action selector="goClicked:" destination="T5O-h0-qLA" eventType="touchUpInside" id="l97-Ql-2Ns"/>
                                     <segue destination="OCP-RC-axd" kind="show" id="XNC-6T-9Gf"/>
@@ -863,7 +863,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.png" width="242" height="208"/>
+        <image name="arrow" width="242" height="208"/>
         <image name="duplicate" width="30" height="30"/>
         <image name="heart" width="30" height="30"/>
         <image name="literature" width="30" height="30"/>
