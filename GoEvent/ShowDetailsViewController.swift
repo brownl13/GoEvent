@@ -31,10 +31,11 @@ class ShowDetailsViewController: UIViewController {
     var curEvent = currentEvent()
     var category: String!
     var typeTaken: Bool!
+    var vendorTaken: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        vendorTaken = false
         typeTaken = false
         labelName?.text = vendorName
         labelWebsite?.text = website
@@ -75,26 +76,41 @@ class ShowDetailsViewController: UIViewController {
         //print(budget)
         if newVendor.category == "Photographer"
         {
+            if newVendor.name == curEvent.pname {
+                vendorTaken = true
+            }
            budget = budget + curEvent.pcost - curEvent.bcost - curEvent.fcost -
             curEvent.dcost - curEvent.vcost
         }
         else if newVendor.category == "Beauty"
         {
+            if newVendor.name == curEvent.bname {
+                vendorTaken = true
+            }
             budget = budget - curEvent.pcost + curEvent.bcost - curEvent.fcost -
                 curEvent.dcost - curEvent.vcost
         }
         else if newVendor.category == "Florist"
         {
+            if newVendor.name == curEvent.fname {
+                vendorTaken = true
+            }
             budget = budget - curEvent.pcost - curEvent.bcost + curEvent.fcost -
                 curEvent.dcost - curEvent.vcost
         }
         else if newVendor.category == "DJ"
         {
+            if newVendor.name == curEvent.dname {
+                vendorTaken = true
+            }
             budget = budget - curEvent.pcost - curEvent.bcost - curEvent.fcost +
                 curEvent.dcost - curEvent.vcost
         }
         else if newVendor.category == "Reception"
         {
+            if newVendor.name == curEvent.vname {
+                vendorTaken = true
+            }
             budget = budget - curEvent.pcost - curEvent.bcost - curEvent.fcost -
                 curEvent.dcost + curEvent.vcost
         }
@@ -105,8 +121,8 @@ class ShowDetailsViewController: UIViewController {
         } else {
             do {
                 let realm = try Realm()
-                let vendor = realm.objects(Vendor.self).filter("name = '\(vendorName!)'")
-                if vendor.count != 0 {
+                _ = realm.objects(Vendor.self).filter("name = '\(vendorName!)'")
+                if vendorTaken {
                     let alert = UIAlertController(title: "Opps!", message: "You already added this vendor!", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
